@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 94, 218);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Form {
+    background-color: rgb(223, 224, 224);
+    width: 450px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Form_Campos {
+    background-color: rgb(247, 243, 243);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.Form_Datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Form_Datos label {
+    font-weight: lighter;
+}
+
+.Form_Datos input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.Form_Campos button {
+    background-color: rgb(36, 94, 218);
+    width: 200px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.Form_Campos button:hover {
+    background-color: rgb(28, 78, 173);
+}
+
+.Botones_Estilos{
+    text-align: center;
+}
+.Botones_Estilos button{
+    background-color: rgb(59, 110, 219);
+    width: 200px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.Botones_Estilos button:hover{
+    background-color: rgb(53, 107, 223);
+
+}
+
+
+/*CSS PARA ESTILI DE ALTO CONTRASTE */
+.high-contrast {
+    background-color: #000000; 
+}
+
+
+.high-contrast .Form {
+    background-color: #313131d7; 
+    color: #ffffff; 
+}
+
+.high-contrast .Form_Campos{
+    background-color: #444343d7;
+}
+
+
+.high-contrast .Form_Datos input {
+    color: #9b9a9a;
+    background-color: #252525;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.high-contrast .Form_Campos button {
+    background-color: #ecde19; 
+    color: #000000; 
+}
+
+.high-contrast .Form_Campos button:hover{
+    background-color: #c4b707; 
+}
+
+
+.high-contrast .Botones_Estilos button{
+    background-color: #c5b806; 
+    color: #000000; 
+}
+
+.high-contrast .Botones_Estilos button:hover{
+    background-color: #b1a505; 
+}
+
+
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.Form {
+    animation: slideDown 0.5s ease-out; 
+}
